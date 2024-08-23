@@ -1,0 +1,35 @@
+# Linting and formatting configuration
+
+exclude = [
+    ".git",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "venv",
+]
+
+target-version = "py38"
+line-length = 79
+indent-width = 4
+
+[lint]
+# For a full list of rules see https://docs.astral.sh/ruff/rules/ .
+extend-select = ["ALL"]
+ignore = [
+    "UP",   # pyupgrade
+    "FURB",
+    "ANN",  # Do not enforce type annotations
+    "C408", # Prefer collection call over literal
+    "TD",   # No TODO linting
+    "D100", # no missing docstring in public module
+    "D101", # no missing docstring in public class
+]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+
+[lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 10.
+max-complexity = 10
+
