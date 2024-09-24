@@ -23,6 +23,7 @@ ignore = [
     "TD",   # No TODO linting
     "D100", # no missing docstring in public module
     "D101", # no missing docstring in public class
+    "484",  # explicit optional types
 ]
 
 [format]
