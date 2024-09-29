@@ -4,3 +4,5 @@ sudo snap install nvim --classic
 sudo apt-get install unzip
 sudo apt install python3-pip
 sudo apt install python3-venv
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
