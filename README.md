@@ -20,6 +20,10 @@ cd inside the repo and run the `stow .` command.
 https://youtu.be/NoFiYOqnC4o?si=UOuRPs2sm7nKaEXj
 https://youtu.be/y6XCebnB9gs?si=UwiQlEEoEqyaZ47O
 
+### using ssh with submodules
+https://www.damirscorner.com/blog/posts/20210423-ChangingUrlsOfGitSubmodules.html
+
+
 ## clone recursively to get nvim config as well
 ```
 git clone git@github.com:BertPlasschaert/dotfiles.git --recurse-submodules
