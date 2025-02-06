@@ -1,6 +1,6 @@
 sudo curl https://sh.rustup.rs -sSf | sh
 sudo apt-get install -y ripgrep
-sudo snap install -y nvim --classic
+sudo snap install nvim --classic
 sudo apt-get install -y unzip
 sudo apt install -y python3-pip
 sudo apt install -y python3-venv
