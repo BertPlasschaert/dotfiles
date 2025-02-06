@@ -9,4 +9,5 @@ sudo apt install -y npm
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-tmux source ~/.tmux.conf
+tmux kill-server
+tmux start-server
