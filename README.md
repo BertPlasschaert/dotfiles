@@ -21,7 +21,9 @@ git clone git@github.com:BertPlasschaert/dotfiles.git --recurse-submodules
 clone dotfiles repo (this repo) to user home dir.
 cd inside the repo and run the `stow .` command.
 run the setup script `. setup.sh`
-open Tmux and press: `<leader> + I` (capital i to update the tpm mods) (ctrl+b is default leader key)
+open Tmux and press: `<leader> + I` (capital i to update the tpm mods)
+
+Inside Nvim run: `Lazy restore` to revert back to locked plugin versions 
 
 ## sources
 https://youtu.be/NoFiYOqnC4o?si=UOuRPs2sm7nKaEXj
