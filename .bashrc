@@ -125,3 +125,21 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 . "$HOME/.cargo/env"
+
+alias repos="cd $HOME/repos"
+alias notes="cd $HOME/notes"
+alias fix="stty sane"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+
+# pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+# opencode
+export PATH=/home/bert/.opencode/bin:$PATH
+
+# go install path
+export PATH="$PATH:$(go env GOPATH)/bin"
