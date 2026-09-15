@@ -4,7 +4,7 @@ TREE_SITTER_VERSION=v0.27.0
 
 if [[ "$(uname)" == "Darwin" ]]; then
   # macOS — requires Homebrew (https://brew.sh)
-  brew install ripgrep unzip python3 node stow
+  brew install ripgrep unzip python3 node stow go
   curl https://sh.rustup.rs -sSf | sh -s -- -y
 
   # nvim pinned to $NVIM_VERSION — source tarball, same as Linux (no plugin pinning needed anymore)
@@ -50,6 +50,7 @@ else
   sudo apt install -y ipython3
   sudo apt install -y npm
   sudo apt-get install -y stow
+  sudo apt-get install -y golang-go
 
   # nvim pinned to $NVIM_VERSION — source tarball, same as macOS
   sudo rm -rf /opt/nvim
