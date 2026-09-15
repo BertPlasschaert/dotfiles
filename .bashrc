@@ -121,6 +121,7 @@ git config --global core.editor "vim"
 export PYTHONDONTWRITEBYTECODE=1
 export PATH="$PATH:/opt/nvim/bin"
 export PATH="$PATH:/opt/tmux/bin"
+export PATH="$PATH:/opt/tree-sitter/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
