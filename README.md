@@ -23,7 +23,7 @@ cd inside the repo and run the `stow .` command.
 run the setup script `. setup.sh`
 open Tmux and press: `<leader> + I` (capital i to update the tpm mods)
 
-Inside Nvim run: `Lazy restore` to revert back to locked plugin versions 
+Inside Nvim run: `Lazy sync` to install plugins (there's no locked/pinned versions anymore — nvim itself is pinned instead, see `.config/nvim/README.md`)
 
 ## sources
 https://youtu.be/NoFiYOqnC4o?si=UOuRPs2sm7nKaEXj
