@@ -21,6 +21,16 @@ git clone git@github.com:BertPlasschaert/dotfiles.git --recurse-submodules
 clone dotfiles repo (this repo) to user home dir.
 cd inside the repo and run the `stow .` command.
 run the setup script `. setup.sh`
+
+### zsh users only
+`stow` can't manage `~/.zshrc` directly (it's not a fresh symlink target —
+you already have real content in there). Add one line to your own
+`~/.zshrc` to pick up the PATH additions (nvim/tmux/tree-sitter) that
+`.bashrc` gets for free via stow:
+```
+source "$HOME/.path.sh"
+```
+
 open Tmux and press: `<leader> + I` (capital i to update the tpm mods)
 
 Inside Nvim run: `Lazy sync` to install plugins (there's no locked/pinned versions anymore — nvim itself is pinned instead, see `.config/nvim/README.md`)
